@@ -10,7 +10,8 @@ Multi-FireRS is a multi-category dataset of fire events, featuring a diverse col
    - **Source**: [Landsat 8](https://earthexplorer.usgs.gov/) and [Sentinel 2](https://scihub.copernicus.eu/dhus/) satellites.
    - **Resolution**: 30 meters (Landsat 8) and 20 meters (Sentinel 2).
    - **Characteristics**: Images cover various bands including visible light and thermal infrared,  providing rich information for fire event recognition and analysis.
-![](media/16999435515242/16999477367869.jpg)
+   ![image](https://github.com/Bella0818/Datasets/assets/79988921/1e7dd5aa-3571-4314-b04e-569adf688861)
+
 ### 2. Land Cover Data
    - **Source**: [GlobeLand30](https://www.webmap.cn/commres.do?method=globeIndex) dataset published by the National Geomatics Center of China.
    - **Resolution**: 30 meters.
@@ -25,7 +26,7 @@ Multi-FireRS is a multi-category dataset of fire events, featuring a diverse col
    - **Source**: [Unconstrained individual countries 2000-2020 population count datasets](https://hub.worldpop.org/project/categories?id=18Proc)
    - **Resolution**: 1000 meters.
    - **Measure**: Recorded number of people per square kilometer.
-![](media/16999435515242/16999464681997.jpg)
+![image](https://github.com/Bella0818/Datasets/assets/79988921/110caba5-7c37-4bfc-b0f9-8cd9e284560a)
 
 ## Data Collection and Processing
 
