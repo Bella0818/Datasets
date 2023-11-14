@@ -2,14 +2,14 @@
 
 ## Introduction
 
-Multi-FireRS is a multi-category dataset of fire events, featuring a diverse collection of real-world remote sensing images related to wild fires, straw burning, and volcanic eruptions. The dataset is built upon medium to high-resolution satellite images from Landsat and Sentinel sensors, widely used for fire recognition and assessment.
+Multi-FireRS is an open dataset designed specifically for instance segmentation in remote sensing images, with a focus on fire events. It comprises a diverse collection of real-world remote sensing images, facilitating the identification and analysis of various fire types, including wild fires, straw burning, and volcanic eruptions. The dataset utilizes medium to high-resolution satellite images from Landsat and Sentinel sensors.
 
 ## Data Definitions
 
 ### 1. Multispectral Satellite Images
    - **Source**: [Landsat 8](https://earthexplorer.usgs.gov/) and [Sentinel 2](https://scihub.copernicus.eu/dhus/) satellites.
    - **Resolution**: 30 meters (Landsat 8) and 20 meters (Sentinel 2).
-   - **Characteristics**: Images cover various bands including visible light and thermal infrared,  providing rich information for fire event recognition and analysis.
+   - **Characteristics**: Images cover various bands including visible light and thermal infrared,  providing rich information for fire event identification and analysis.
    ![image](https://github.com/Bella0818/Datasets/assets/79988921/1e7dd5aa-3571-4314-b04e-569adf688861)
 
 ### 2. Land Cover Data
@@ -36,19 +36,31 @@ Multi-FireRS is a multi-category dataset of fire events, featuring a diverse col
   - **Band Combination**:
     - For Landsat 8 images: Band 7 (Shortwave Infrared), Band 6 (Shortwave Infrared), and Band 4 (Red) were combined.
     - For Sentinel images: Band 12 (Shortwave Infrared), Band 11 (Shortwave Infrared), and Band 8 (Near Infrared) were combined.
-    - These band combinations were performed to generate false-color images, providing enriched fire point information in the remote sensing imagery.
+    - These band combinations were performed to generate false-color images, providing enriched fire event information in the remote sensing imagery.
   - **Resampling**: All types of images were uniformly resampled to a spatial resolution of 30 meters.
   - **Cropping**: After resampling, images were cropped to a size of 512x512 pixels.
 - **Annotation**: Fire event blocks are selected and labeled with the help of motivated participants, including researchers and students.
 
 ## Dataset Composition
 
-- **Categories**: Wild fires, Straw burning, Volcanic eruptions.
-- **Total Images**: 1151 PNG images.
+- **Categories and Ratio**: 
+
+    | Category | Image numbers |
+    |---|---|
+    | Wildfire | xx |
+    | StrawBurning | xx |
+    | VolcanicEruption | xx |
+- **Total Fire Event Groups**: 1151.
+- **Image Types per Group**: Each fire event group includes:
+  - Single-band fire event image.
+  - RGB fire event image.
+  - Multi-band fused fire event image.
+  - Land cover image.
+  - Elevation image.
+  - Population density image.
 - **Image Size**: 512x512 pixels.
 - **Resolution**: 30 meters.
-- **Dataset Division**: The dataset is split into training and testing sets with a ratio of 7:3.
-- **Multimodal Data**: Each fire event image is paired with heterogenous environmental data of the same size and resolution, providing comprehensive context for fire event analysis.
+- **Dataset Division**: training:testing=7:3.
 
 ## Access
 
