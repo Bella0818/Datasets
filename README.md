@@ -47,10 +47,10 @@ Multi-FireRS is an open dataset designed specifically for instance segmentation 
 
     | Category | Image numbers |
     |---|---|
-    | Wildfire | xx |
-    | StrawBurning | xx |
-    | VolcanicEruption | xx |
-- **Total Fire Event Groups**: 1151.
+    | Wildfire | 237 |
+    | Straw Burning | 23 |
+    | Volcani cEruption | 174 |
+- **Total Fire Event Groups**: 434.
 - **Image Types per Group**: Each fire event group includes:
   - Single-band fire event image.
   - RGB fire event image.
