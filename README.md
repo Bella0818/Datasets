@@ -42,7 +42,7 @@ Multi-FireRS is an open dataset designed specifically for instance segmentation 
 - **Annotation**: Fire event blocks are selected and labeled with the help of motivated participants, including researchers and students.
 
 ## Dataset Composition
-
+- **Data Type**: COCO Annotations Converted to YOLO Format.
 - **Categories and Ratio**: 
 
     | Category | Image numbers |
@@ -52,12 +52,11 @@ Multi-FireRS is an open dataset designed specifically for instance segmentation 
     | Volcani cEruption | 174 |
 - **Total Fire Event Groups**: 434.
 - **Image Types per Group**: Each fire event group includes:
-  - Single-band fire event image.
-  - RGB fire event image.
   - Multi-band fused fire event image.
   - Land cover image.
   - Elevation image.
   - Population density image.
+  - Annotations
 - **Image Size**: 512x512 pixels.
 - **Resolution**: 30 meters.
 - **Dataset Division**: training:testing=7:3.
