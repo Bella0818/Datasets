@@ -1,5 +1,25 @@
 # Multi-FireRS Dataset
 
+## Image Gallery
+
+<!-- Row 1 -->
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/user-attachments/assets/8f0d36a8-11df-4fe7-893b-71e468864b71" width="190" />
+  <img src="https://github.com/user-attachments/assets/9e5014ac-3b20-4e42-9f3f-262ff530259d" width="190" />
+  <img src="https://github.com/user-attachments/assets/a822f6d2-dde4-4860-855f-ea07fc69e9dd" width="190" />
+  <img src="https://github.com/user-attachments/assets/363255ec-e686-4dc9-9607-72bfe49bd1fd" width="190" />
+  <img src="https://github.com/user-attachments/assets/aa67fd5d-34e1-4a44-9285-893864cd3198" width="190" />
+</div>
+
+<!-- Row 2 -->
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/user-attachments/assets/b1d15337-80cf-475c-8dc2-72c04c187fd6" width="190" />
+  <img src="https://github.com/user-attachments/assets/cf53f728-b5fd-49ba-99d4-b1152c832b76" width="190" />
+  <img src="https://github.com/user-attachments/assets/c661ce81-5cb2-4dcc-a7e0-38b99378d6be" width="190" />
+  <img src="https://github.com/user-attachments/assets/41af354f-ca4e-4c84-a02c-c0fc75f05581" width="190" />
+  <img src="https://github.com/user-attachments/assets/4b0e875c-9a95-4db6-a0c3-a4cac2355826" width="190" />
+</div>
+
 ## Introduction
 
 Multi-FireRS is an open dataset designed specifically for instance segmentation in remote sensing images, with a focus on fire events. It comprises a diverse collection of real-world remote sensing images, facilitating the identification and analysis of various fire types, including wild fires, straw burning, and volcanic eruptions. The dataset utilizes medium to high-resolution satellite images from Landsat and Sentinel sensors.
