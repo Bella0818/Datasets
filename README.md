@@ -3,33 +3,32 @@
 ## Tracking Fire Events with Multi-Source Satellite Data
 
 This repository contains case study videos demonstrating the use of multi-source satellite data for wildfire tracking and analysis. These videos showcase how various satellite sources (such as Landsat, Sentinel, and MODIS) are used to monitor wildfire progression, assess burn severity, and support emergency response. 
-
 <table style="border-collapse: collapse; width: 100%;">
   <tr>
     <td align="center" style="border: none;">
-      <img src="https://github.com/user-attachments/assets/c661ce81-5cb2-4dcc-a7e0-38b99378d6be" width="100%" />
+      <img src="https://github.com/user-attachments/assets/c661ce81-5cb2-4dcc-a7e0-38b99378d6be" width="300px" height="300px" />
       <br><strong>Stagecoach Fire - August 3, 2020</strong>
     </td>
     <td align="center" style="border: none;">
-      <img src="https://github.com/user-attachments/assets/aa67fd5d-34e1-4a44-9285-893864cd3198" width="90%" />
+      <img src="https://github.com/user-attachments/assets/aa67fd5d-34e1-4a44-9285-893864cd3198" width="300px" height="300px" />
       <br><strong>Lake Fire - August 12, 2020</strong>
     </td>
     <td align="center" style="border: none;">
-      <img src="https://github.com/user-attachments/assets/9e5014ac-3b20-4e42-9f3f-262ff530259d" width="100%" />
+      <img src="https://github.com/user-attachments/assets/9e5014ac-3b20-4e42-9f3f-262ff530259d" width="300px" height="300px" />
       <br><strong>Mineral Fire - July 13, 2020</strong>
     </td>
   </tr>
   <tr>
     <td align="center" style="border: none;">
-      <img src="https://github.com/user-attachments/assets/3ca33fb8-15ba-43e0-bfb4-f07e540aa3e5" width="90%" />
+      <img src="https://github.com/user-attachments/assets/3ca33fb8-15ba-43e0-bfb4-f07e540aa3e5" width="300px" height="300px" />
       <br><strong>Kīlauea Volcano Eruption - February 6, 2021</strong>
     </td>
     <td align="center" style="border: none;">
-      <img src="assets/North%20Complex%20Fire.gif" width="100%" />
+      <img src="assets/North%20Complex%20Fire.gif" width="300px" height="300px" />
       <br><strong>North Complex Fire - August 25, 2020 (Landsat/Sentinel)</strong>
     </td>
     <td align="center" style="border: none;">
-      <img src="https://github.com/user-attachments/assets/8f0d36a8-11df-4fe7-893b-71e468864b71" width="100%" />
+      <img src="https://github.com/user-attachments/assets/8f0d36a8-11df-4fe7-893b-71e468864b71" width="300px" height="300px" />
       <br><strong>North Complex Fire - August 25, 2020 (MODIS)</strong>
     </td>
   </tr>
