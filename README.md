@@ -25,7 +25,7 @@ This repository contains case study videos demonstrating the use of multi-source
       <br><strong>Kīlauea Volcano Eruption - February 6, 2021</strong>
     </td>
     <td align="center" style="border: none;">
-      <img src="https://github.com/user-attachments/assets/8f0d36a8-11df-4fe7-893b-71e468864b71" width="100%" />
+      <img src="assets/North%20Complex%20Fire.gif" width="100%" />
       <br><strong>North Complex Fire - August 25, 2020 (Landsat/Sentinel)</strong>
     </td>
     <td align="center" style="border: none;">
