@@ -89,7 +89,8 @@ To ensure category consistency, we standardized the categories across datasets a
 | LandScan global population datasets | 1000 meters    | https://landscan.ornl.gov/about                   |
 
 
-![fig4-v2](/Users/judy/Desktop/Judy/研究生科研制图相关/fig4-v2.png)
+![281381731163890_ pic_hd](https://github.com/user-attachments/assets/3b1c93f4-f39c-4633-91e3-60487fc9a159)
+
 
 
 ## Data Collection and Processing
