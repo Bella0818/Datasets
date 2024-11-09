@@ -72,7 +72,6 @@ To ensure category consistency, we standardized the categories across datasets a
 | Shrubland          | 9     | (0, 255, 120)   | 40          | (0, 255, 120)     | N/A  | N/A        | 3    | (51, 160, 44)   |
 | Clouds             | 10    | (200, 200, 200) | N/A         | N/A               | 8    | #C8C8C8    | N/A  | N/A             |
 | Tundra             | 11    | (100, 100, 50)  | 70          | (100, 100, 50)    | N/A  | N/A        | N/A  | N/A             |
-| Sea                | 255   | (0, 200, 255)   | 255         | (0, 200, 255)     | N/A  | N/A        | N/A  | N/A             |
 | No Data            | 0     | (0, 0, 0)       | 0           | (0, 0, 0)         | N/A  | N/A        | N/A  | N/A             |
 
 
