@@ -4,36 +4,39 @@
 
 This repository contains case study videos demonstrating the use of multi-source satellite data for wildfire tracking and analysis. These videos showcase how various satellite sources (such as Landsat, Sentinel, and MODIS) are used to monitor wildfire progression, assess burn severity, and support emergency response. 
 
-<div style="display: flex; justify-content: space-around;">
-  <figure style="text-align: center;">
-    <img src="https://github.com/user-attachments/assets/c661ce81-5cb2-4dcc-a7e0-38b99378d6be" width="190" />
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+  
+  <figure style="flex: 1 1 30%; text-align: center; margin: 10px;">
+    <img src="https://github.com/user-attachments/assets/c661ce81-5cb2-4dcc-a7e0-38b99378d6be" width="100%" />
     <figcaption><strong>Stagecoach Fire - August 3, 2020</strong></figcaption>
   </figure>
-  <figure style="text-align: center;">
-    <img src="https://github.com/user-attachments/assets/aa67fd5d-34e1-4a44-9285-893864cd3198" width="190" />
+
+  <figure style="flex: 1 1 30%; text-align: center; margin: 10px;">
+    <img src="https://github.com/user-attachments/assets/aa67fd5d-34e1-4a44-9285-893864cd3198" width="100%" />
     <figcaption><strong>Lake Fire - August 12, 2020</strong></figcaption>
   </figure>
-  <figure style="text-align: center;">
-    <img src="https://github.com/user-attachments/assets/9e5014ac-3b20-4e42-9f3f-262ff530259d" width="190" />
+
+  <figure style="flex: 1 1 30%; text-align: center; margin: 10px;">
+    <img src="https://github.com/user-attachments/assets/9e5014ac-3b20-4e42-9f3f-262ff530259d" width="100%" />
     <figcaption><strong>Mineral Fire - July 13, 2020</strong></figcaption>
   </figure>
-</div>
 
-<div style="display: flex; justify-content: space-around;">
-  <figure style="text-align: center;">
-    <img src="https://github.com/user-attachments/assets/3ca33fb8-15ba-43e0-bfb4-f07e540aa3e5" width="190" />
+  <figure style="flex: 1 1 30%; text-align: center; margin: 10px;">
+    <img src="https://github.com/user-attachments/assets/3ca33fb8-15ba-43e0-bfb4-f07e540aa3e5" width="100%" />
     <figcaption><strong>Kīlauea Volcano Eruption - February 6, 2021</strong></figcaption>
   </figure>
-  <figure style="text-align: center;">
-    <img src="/Users/judy/Desktop/Judy/研究生数据相关/跟踪case/20241105tif.gif" width="190" />
-    <figcaption><strong>North Complex Fire - August 25, 2020(Landsat/Sentinel)</strong></figcaption>
-  </figure>
-  <figure style="text-align: center;">
-    <img src="https://github.com/user-attachments/assets/8f0d36a8-11df-4fe7-893b-71e468864b71" width="190" />
-    <figcaption><strong>North Complex Fire - August 25, 2020(MODIS)</strong></figcaption>
-  </figure>
-</div>
 
+  <figure style="flex: 1 1 30%; text-align: center; margin: 10px;">
+    <img src="https://github.com/user-attachments/assets/8f0d36a8-11df-4fe7-893b-71e468864b71" width="100%" />
+    <figcaption><strong>North Complex Fire - August 25, 2020 (Landsat/Sentinel)</strong></figcaption>
+  </figure>
+
+  <figure style="flex: 1 1 30%; text-align: center; margin: 10px;">
+    <img src="https://github.com/user-attachments/assets/8f0d36a8-11df-4fe7-893b-71e468864b71" width="100%" />
+    <figcaption><strong>North Complex Fire - August 25, 2020 (MODIS)</strong></figcaption>
+  </figure>
+  
+</div>
 
 ## Introduction
 
