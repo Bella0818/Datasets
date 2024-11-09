@@ -1,24 +1,39 @@
 # Multi-FireRS Dataset
 
-## Image Gallery
+## Tracking Fire Events with Multi-Source Satellite Data
 
-<!-- Row 1 -->
-<div style="display: flex; justify-content: space-between;">
-  <img src="https://github.com/user-attachments/assets/8f0d36a8-11df-4fe7-893b-71e468864b71" width="190" />
-  <img src="https://github.com/user-attachments/assets/9e5014ac-3b20-4e42-9f3f-262ff530259d" width="190" />
-  <img src="https://github.com/user-attachments/assets/3ca33fb8-15ba-43e0-bfb4-f07e540aa3e5" width="190" />
-  <img src="https://github.com/user-attachments/assets/363255ec-e686-4dc9-9607-72bfe49bd1fd" width="190" />
-  <img src="https://github.com/user-attachments/assets/aa67fd5d-34e1-4a44-9285-893864cd3198" width="190" />
+This repository contains case study videos demonstrating the use of multi-source satellite data for wildfire tracking and analysis. These videos showcase how various satellite sources (such as Landsat, Sentinel, and MODIS) are used to monitor wildfire progression, assess burn severity, and support emergency response. 
+
+<div style="display: flex; justify-content: space-around;">
+  <figure style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/c661ce81-5cb2-4dcc-a7e0-38b99378d6be" width="190" />
+    <figcaption><strong>Stagecoach Fire - August 3, 2020</strong></figcaption>
+  </figure>
+  <figure style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/aa67fd5d-34e1-4a44-9285-893864cd3198" width="190" />
+    <figcaption><strong>Lake Fire - August 12, 2020</strong></figcaption>
+  </figure>
+  <figure style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/9e5014ac-3b20-4e42-9f3f-262ff530259d" width="190" />
+    <figcaption><strong>Mineral Fire - July 13, 2020</strong></figcaption>
+  </figure>
 </div>
 
-<!-- Row 2 -->
-<div style="display: flex; justify-content: space-between;">
-  <img src="https://github.com/user-attachments/assets/b1d15337-80cf-475c-8dc2-72c04c187fd6" width="190" />
-  <img src="https://github.com/user-attachments/assets/cf53f728-b5fd-49ba-99d4-b1152c832b76" width="190" />
-  <img src="https://github.com/user-attachments/assets/c661ce81-5cb2-4dcc-a7e0-38b99378d6be" width="190" />
-  <img src="https://github.com/user-attachments/assets/41af354f-ca4e-4c84-a02c-c0fc75f05581" width="190" />
-  <img src="https://github.com/user-attachments/assets/4b0e875c-9a95-4db6-a0c3-a4cac2355826" width="190" />
+<div style="display: flex; justify-content: space-around;">
+  <figure style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/3ca33fb8-15ba-43e0-bfb4-f07e540aa3e5" width="190" />
+    <figcaption><strong>Kīlauea Volcano Eruption - February 6, 2021</strong></figcaption>
+  </figure>
+  <figure style="text-align: center;">
+    <img src="/Users/judy/Desktop/Judy/研究生数据相关/跟踪case/20241105tif.gif" width="190" />
+    <figcaption><strong>North Complex Fire - August 25, 2020(Landsat/Sentinel)</strong></figcaption>
+  </figure>
+  <figure style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/8f0d36a8-11df-4fe7-893b-71e468864b71" width="190" />
+    <figcaption><strong>North Complex Fire - August 25, 2020(MODIS)</strong></figcaption>
+  </figure>
 </div>
+
 
 ## Introduction
 
@@ -30,23 +45,51 @@ Multi-FireRS is an open dataset designed specifically for instance segmentation 
    - **Source**: [Landsat 8](https://earthexplorer.usgs.gov/) and [Sentinel 2](https://scihub.copernicus.eu/dhus/) satellites.
    - **Resolution**: 30 meters (Landsat 8) and 20 meters (Sentinel 2).
    - **Characteristics**: Images cover various bands including visible light and thermal infrared,  providing rich information for fire event identification and analysis.
-   ![image](https://github.com/Bella0818/Datasets/assets/79988921/1e7dd5aa-3571-4314-b04e-569adf688861)
+      ![image](https://github.com/Bella0818/Datasets/assets/79988921/1e7dd5aa-3571-4314-b04e-569adf688861)
 
 ### 2. Land Cover Data
-   - **Source**: [GlobeLand30](https://www.webmap.cn/commres.do?method=globeIndex) dataset published by the National Geomatics Center of China.
-   - **Resolution**: 30 meters.
-   - **Details**: Describes different types of land cover such as forests, croplands, urban, etc.
+| **Source**                                               | **Year(s)** | **Resolution** | **Link**                                           |
+| -------------------------------------------------------- | ----------- | -------------- | -------------------------------------------------- |
+| GlobeLand30 dataset (National Geomatics Center of China) | 2020        | 30 meters      | https://www.webmap.cn/commres.do?method=globeIndex |
+| ESRI Land Cover dataset (Esri)                           | 2021, 2022  | 10 meters      | https://livingatlas.arcgis.com/landcoverexplorer/  |
+| CLCD dataset (Annual China Land Cover Dataset)           | 2013        | 30 meters      | https://zenodo.org/records/5816591                 |
+
+To ensure category consistency, we standardized the categories across datasets and mapped the corresponding colors, as shown in the table below.
+
+| Category           | Value | Color (R, G, B) | GlobeLand30 | GlobeLand30 Color | Esri | Esri Color | CLCD | CLCD (R, G, B)  |
+| ------------------ | ----- | --------------- | ----------- | ----------------- | ---- | ---------- | ---- | --------------- |
+| Water              | 1     | (0, 0, 255)     | 60          | (0, 0, 255)       | 1    | #1A5BAB    | 5    | (30, 105, 180)  |
+| Forest             | 2     | (0, 100, 0)     | 20          | (0, 100, 0)       | 2    | #358221    | 2    | (68, 111, 51)   |
+| Flooded Vegetation | 3     | (0, 100, 255)   | 50          | (0, 100, 255)     | 3    | #87D19E    | 9    | (40, 155, 232)  |
+| Crops              | 4     | (250, 160, 255) | 10          | (250, 160, 255)   | 4    | #FFDB5C    | 1    | (250, 227, 156) |
+| Built Area         | 5     | (255, 0, 0)     | 80          | (255, 0, 0)       | 5    | #ED022A    | 8    | (226, 66, 144)  |
+| Bare Ground        | 6     | (190, 190, 190) | 90          | (190, 190, 190)   | 6    | #EDE9E4    | 7    | (207, 189, 163) |
+| Snow/Ice           | 7     | (200, 240, 255) | 100         | (200, 240, 255)   | 7    | #F2FAFF    | 6    | (166, 206, 227) |
+| Grassland          | 8     | (100, 255, 0)   | 30          | (100, 255, 0)     | 9    | #C6AD8D    | 4    | (171, 211, 123) |
+| Shrubland          | 9     | (0, 255, 120)   | 40          | (0, 255, 120)     | N/A  | N/A        | 3    | (51, 160, 44)   |
+| Clouds             | 10    | (200, 200, 200) | N/A         | N/A               | 8    | #C8C8C8    | N/A  | N/A             |
+| Tundra             | 11    | (100, 100, 50)  | 70          | (100, 100, 50)    | N/A  | N/A        | N/A  | N/A             |
+| Sea                | 255   | (0, 200, 255)   | 255         | (0, 200, 255)     | N/A  | N/A        | N/A  | N/A             |
+| No Data            | 0     | (0, 0, 0)       | 0           | (0, 0, 0)         | N/A  | N/A        | N/A  | N/A             |
+
+
 
 ### 3. Elevation Data
+
    - **Source**: [ASTER GDEMv3](https://www.gscloud.cn/sources/accessdata/aeab8000652a45b38afbb7ff023ddabb?pid=302).
    - **Resolution**: 30 meters.
    - **Function**: Describes the surface relief with coordinates and elevation points.
 
 ### 4. Population Density Data
-   - **Source**: [Unconstrained individual countries 2000-2020 population count datasets](https://hub.worldpop.org/project/categories?id=18Proc)
-   - **Resolution**: 1000 meters.
-   - **Measure**: Recorded number of people per square kilometer.
-![image](https://github.com/Bella0818/Datasets/assets/79988921/110caba5-7c37-4bfc-b0f9-8cd9e284560a)
+
+| **Source**                          | **Resolution** | **Link**                                          |
+| ----------------------------------- | -------------- | ------------------------------------------------- |
+| WorldPop global population datasets | 1000 meters    | https://hub.worldpop.org/project/categories?id=18 |
+| LandScan global population datasets | 1000 meters    | https://landscan.ornl.gov/about                   |
+
+
+![fig4-v2](/Users/judy/Desktop/Judy/研究生科研制图相关/fig4-v2.png)
+
 
 ## Data Collection and Processing
 
@@ -63,13 +106,6 @@ Multi-FireRS is an open dataset designed specifically for instance segmentation 
 
 ## Dataset Composition
 - **Data Type**: COCO Annotations Converted to YOLO Format.
-- **Categories and Ratio**: 
-
-    | Category | Image numbers |
-    |---|---|
-    | Wildfire | 237 |
-    | Straw Burning | 23 |
-    | Volcani cEruption | 174 |
 - **Total Fire Event Groups**: 434.
 - **Image Types per Group**: Each fire event group includes:
   - Multi-band fused fire event image.
